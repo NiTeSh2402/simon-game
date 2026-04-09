@@ -78,7 +78,7 @@ function nextsequence(){
    
 
 function playaudio(name){
-    var audio = new Audio("sounds/" + name + ".mp3");
+    var audio = new Audio("simon/sounds/" + name + ".mp3");
     audio.play();
 }
 function animatepress(i){
