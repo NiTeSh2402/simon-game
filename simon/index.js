@@ -78,8 +78,13 @@ function nextsequence(){
    
 
 function playaudio(name){
+    console.log("playing:", name);
     var audio = new Audio("simon/sounds/" + name + ".mp3");
-    audio.play();
+    audio.play().then(()=>{
+        console.log("played");
+    }).catch((e)=>{
+        console.log("error:", e);
+    });
 }
 function animatepress(i){
      $("#"+ i).addClass("pressed");
