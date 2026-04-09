@@ -31,7 +31,7 @@ $(".btn").click(function(){
     animatepress(i);
     
     
-``})
+});
 
   function checkanswer(currentLevel){
     if (gamePattern[currentLevel] === written[currentLevel]) {
